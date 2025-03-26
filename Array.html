@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h2>Javascript Arrays</h2>
+    <p id="demo"></p>
+
+    <p id="myjoin"></p>
+    <p id="myfirstpop"></p>
+    <p id="mysecondpop"></p>
+
+    <script>
+      var clubs = [
+        "Real Madrid",
+        "Barcelona",
+        "Manchester United",
+        "Bashundhara KIngs",
+      ];
+
+      document.getElementById("demo").innerHTML = clubs[0];
+
+      for (i = 0; i < clubs.length; i++) {
+        document.write(` <br>${i}. ${clubs[i]}`);
+      }
+
+      document.getElementById("myjoin").innerHTML = clubs.join(" -- ");
+
+      clubs.pop();
+      document.getElementById("myfirstpop").innerHTML = clubs.join(" (*-*) ");
+
+      clubs.pop();
+      document.getElementById("mysecondpop").innerHTML = clubs.join(" (^..^) ");
+    </script>
+  </body>
+</html>
