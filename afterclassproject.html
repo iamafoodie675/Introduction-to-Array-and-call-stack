@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        background-color: rgb(38, 38, 38);
+        color: whitesmoke;
+        font-family: Verdana;;
+      }
+
+      h2 {
+        color: aqua;
+        text-shadow: 7px 7px 7px rgb(143, 161, 161);
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Javascript Objects Data Structure and Array</h2>
+
+    <script>
+      var student = {
+        name: "Nabila",
+        age: "14",
+        Grade: "8",
+        hobby: "Coding, Drawing and playing roblox",
+        fav_sport: "Tennis",
+      };
+
+      document.write(
+        `Student name is: ${student.name}<br>
+        Student Favourite Sport is: ${student.fav_sport}<br>
+        Student's Age is: ${student.age}<br>
+        Student reads in class: ${student.Grade}<br>
+        Student's hobbies are: ${student.hobby}`
+      );
+
+      document.write("<br>");
+
+      var color = ["White", "Black", "Pink", "Orange", "Green"];
+      document.write("<br>");
+      document.write(
+        `Before Popping the colors : ${color.join("─=≡Σʕっ•ᴥ•ʔっ")}`
+      );
+      document.write("<br>");
+      document.write(`My Favourite Color is : ${color[2]}`);
+      document.write("<br>");
+      color.pop();
+      document.write(`After Popping the colors : ${color.join("( ͡° ͜ʖ ͡° )")}`);
+    </script>
+  </body>
+</html>
